@@ -1,0 +1,150 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+
+a, u {
+    text-decoration: none;
+    color: #2c2c2c;
+}
+
+.p3{
+	font-weight: normal;
+	font-size: 24px;
+	color: #2c2c2c;
+}
+
+.p2{
+	font-weight: 600;
+	font-size: 32px;
+	color: #2c2c2c;
+}
+
+.p5{
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 30px;
+	color: #3a3a3a;
+}
+
+
+
+body{
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 0px;
+    }
+
+.container{ 
+	width: 946px;
+	height: auto;
+	margin: auto;
+	background-color: white;
+}
+
+
+.navbar{
+	width: 100%;
+	margin: 0px;
+	background-color: white;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding: 27px 0px 0px 0px;
+	letter-spacing: 1.2px;
+}
+
+.navtext{
+	padding: 0px 30px;
+	vertical-align: top;
+}
+
+.contentleft{
+	display: inline-block;
+	font-weight: 700;
+	font-size: 14px;
+	margin-right: 64px;
+
+}
+
+.contentright{
+	display: inline-block;
+	float: right;
+	font-weight: 600;
+	font-size: 12px;
+	margin-left: 64px;
+}
+
+
+.actualcontent{
+	float: left;
+	margin-left: 64px;
+}
+
+#contentbody{
+	background-color: white;
+	margin-top: 100px;
+}
+
+.contenttext{
+	margin-left: 30px;
+}
+
+.projects{
+	margin-top: 100px;
+	position: relative;
+}
+
+.projectcard{
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: calc(50% - 20px);
+	height: 412px;
+	border: 1px solid;
+	border-color: #a9a9a9;
+	margin-bottom: 40px;
+}
+
+.cardtext{
+	margin: 30px 43px 0px;
+}
+
+.cardbottomtextandtags{ 
+
+	display: inline-block;
+	float: left;
+	position: absolute;
+	bottom: 20px;
+}
+
+.tagbox{
+	display: inline-block;
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 10px;
+	color: #6c6c6c;
+	margin-left: 8px;
+	padding: 4px; 
+	border: 1px solid;
+	border-color:#bcbcbc;
+}
+
+.button{
+	background-color: #e7e7e7;
+	border: none;
+	color: #3d3d3d;
+	padding: 15px 32px;
+	text-align: center;
+	text-transform: uppercase;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+}
+
+.footer{
+	width: 100%;
+	margin-top: 60px;
+	background-color: white;
+
+}
