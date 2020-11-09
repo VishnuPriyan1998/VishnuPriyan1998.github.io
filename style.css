@@ -29,7 +29,6 @@ a, u {
 }
 
 
-
 body{
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -55,12 +54,14 @@ body{
 }
 
 .navtext{
+	display: flex;
+	justify-content: space-between;
 	padding: 0px 30px;
 	vertical-align: top;
 }
 
 .contentleft{
-	display: inline-block;
+	display: flex;
 	font-weight: 700;
 	font-size: 14px;
 	margin-right: 64px;
@@ -68,20 +69,19 @@ body{
 }
 
 .contentright{
-	display: inline-block;
-	float: right;
+	display: flex;
+	align-content: center;
 	font-weight: 600;
 	font-size: 12px;
 	margin-left: 64px;
 }
 
 
-.actualcontent{
-	float: left;
+.navcontent{
 	margin-left: 64px;
 }
 
-#contentbody{
+.contentbody{
 	background-color: white;
 	margin-top: 100px;
 }
@@ -91,13 +91,15 @@ body{
 }
 
 .projects{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
 	margin-top: 100px;
-	position: relative;
 }
 
 .projectcard{
-	display: inline-block;
-	position: relative;
+	display: flex;
+	flex-flow: column wrap;
 	box-sizing: border-box;
 	width: calc(50% - 20px);
 	height: 412px;
@@ -106,20 +108,41 @@ body{
 	margin-bottom: 40px;
 }
 
+.projectcard:hover{
+	transition: all 0.2s ease;
+	background-color: #e7e7e7;}
+.projectcardimage{
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+	height: 224px;
+}
+
+/*.projectcard{
+	display: inline-block;
+	position: relative;
+	box-sizing: border-box;
+	width: calc(50% - 20px);
+	height: 412px;
+	border: 1px solid;
+	border-color: #a9a9a9;
+	margin-bottom: 40px;
+}*/
+
 .cardtext{
 	margin: 30px 43px 0px;
+	flex-grow: 1;
 }
 
 .cardbottomtextandtags{ 
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	margin: auto 43px 20px;
 
-	display: inline-block;
-	float: left;
-	position: absolute;
-	bottom: 20px;
 }
 
 .tagbox{
-	display: inline-block;
 	text-transform: uppercase;
 	font-weight: normal;
 	font-size: 10px;
@@ -131,6 +154,7 @@ body{
 }
 
 .button{
+	align-self: center;
 	background-color: #e7e7e7;
 	border: none;
 	color: #3d3d3d;
@@ -138,11 +162,15 @@ body{
 	text-align: center;
 	text-transform: uppercase;
 	text-decoration: none;
-	display: inline-block;
+	font-weight: normal;
 	font-size: 14px;
+	letter-spacing: 0.2em;
 }
 
 .footer{
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
 	width: 100%;
 	margin-top: 60px;
 	background-color: white;
