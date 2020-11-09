@@ -53,6 +53,10 @@ body{
 	letter-spacing: 1.2px;
 }
 
+.contentright a{
+	color: #9b9b9b;
+}
+
 .navtext{
 	display: flex;
 	justify-content: space-between;
@@ -61,10 +65,10 @@ body{
 }
 
 .contentleft{
-	display: flex;
 	font-weight: 700;
 	font-size: 14px;
 	margin-right: 64px;
+	color: #2c2c2c;
 
 }
 
@@ -74,16 +78,43 @@ body{
 	font-weight: 600;
 	font-size: 12px;
 	margin-left: 64px;
+	color: #9b9b9b;
+}
+
+.navbar a:hover{
+	color: #2c2c2c;
+	transition: all 0.2s ease;
 }
 
 
 .navcontent{
 	margin-left: 64px;
+	color: #2c2c2c;;
 }
 
 .contentbody{
 	background-color: white;
 	margin-top: 100px;
+}
+
+.aboutcontent{
+	display: flex;
+	flex-flow: row wrap;
+	
+}
+
+.aboutcontenttext{
+	margin-left: 54px;
+	margin-top: auto;
+	width: 390px;
+	align-self: flex-end;
+}
+
+.aboutimage{
+	background-size: cover;
+	background-position: center;
+	width: 428px;
+  	height: 444px;
 }
 
 .contenttext{
@@ -110,24 +141,16 @@ body{
 
 .projectcard:hover{
 	transition: all 0.2s ease;
-	background-color: #e7e7e7;}
+	background-color: #e7e7e7;
+	border-color: #e7e7e7;
+
+}
 .projectcardimage{
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
 	height: 224px;
 }
-
-/*.projectcard{
-	display: inline-block;
-	position: relative;
-	box-sizing: border-box;
-	width: calc(50% - 20px);
-	height: 412px;
-	border: 1px solid;
-	border-color: #a9a9a9;
-	margin-bottom: 40px;
-}*/
 
 .cardtext{
 	margin: 30px 43px 0px;
@@ -155,8 +178,9 @@ body{
 
 .button{
 	align-self: center;
-	background-color: #e7e7e7;
-	border: none;
+	background-color: white;
+	border: 1px solid;
+	border-color: #a9a9a9;
 	color: #3d3d3d;
 	padding: 15px 32px;
 	text-align: center;
@@ -165,6 +189,14 @@ body{
 	font-weight: normal;
 	font-size: 14px;
 	letter-spacing: 0.2em;
+	box-sizing: border-box;
+}
+
+.button:hover{
+	transition: all 0.2s ease;
+	background-color: #e7e7e7;
+	border-color: #e7e7e7;
+
 }
 
 .footer{
