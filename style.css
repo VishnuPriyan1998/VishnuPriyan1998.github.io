@@ -113,8 +113,9 @@ body{
 .aboutimage{
 	background-size: cover;
 	background-position: center;
-	width: 428px;
-  	height: 444px;
+	height: 428px;
+  	width: 444px;
+  	margin-left: 30px;
 }
 
 .contenttext{
@@ -139,12 +140,29 @@ body{
 	margin-bottom: 40px;
 }
 
+.projectcardfun{
+	display: flex;
+	flex-flow: column wrap;
+	box-sizing: border-box;
+	width: calc(50% - 20px);
+	height: 372px;
+	border: 1px solid;
+	border-color: #a9a9a9;
+	margin-bottom: 40px;
+}
+
 .projectcard:hover{
 	transition: all 0.2s ease;
 	background-color: #e7e7e7;
 	border-color: #e7e7e7;
-
 }
+
+.projectcardfun:hover{
+	transition: all 0.2s ease;
+	background-color: #e7e7e7;
+	border-color: #e7e7e7;
+}
+
 .projectcardimage{
 	background-size: cover;
 	background-position: center;
@@ -154,6 +172,11 @@ body{
 
 .cardtext{
 	margin: 30px 43px 0px;
+	flex-grow: 1;
+}
+
+.cardtextfun{
+	margin: 28px 43px 0px;
 	flex-grow: 1;
 }
 
