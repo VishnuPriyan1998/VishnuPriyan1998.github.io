@@ -240,10 +240,9 @@ body{
 }
 
 .coverimage{
-	max-width:calc(100% + 158px);
 	width:calc(100% + 158px);
 	margin-left:-79px;
-	height: 430px;
+	padding-top: 60%;
 	margin-bottom: 54px;
 	background-size: cover;
 	background-position: center;
@@ -287,7 +286,7 @@ blockquote{
 	font-style: italic;
 	font-size: 12px;
 	color: #a8a8a8;
-	margin: 6px auto 66px;
+	margin: 6px auto 54px;
 }
 .projectpagetags{ 
 	display: flex;
@@ -297,7 +296,6 @@ blockquote{
 }
 
 .projectpagetags p{
-	text-transform: uppercase;
 	font-weight: normal;
 	line-height: 1.5em;
 	font-size: 10px;
@@ -306,7 +304,8 @@ blockquote{
 }
 
 .projectimage{
-	width: 50%;
+	width: calc(100% - 234px);
+	padding-top: 110%;
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -314,12 +313,32 @@ blockquote{
 
 .projectimagelong{
 	width: 100%;
+	padding-top: 34%;
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
 }
 
-.projectimagerow{
+/*.projectimagerow{
 	display: flex;
 	flex-flow: row wrap;
-}
+}*/
+
+ @media all and (max-width: 575px)
+{.projectcard,.projectcardfun{margin-left:auto; margin-right: auto;}
+    .navbar{width:calc(100% - 64px);}
+    .navtext{padding-left: 58px;}
+    .contentright{display:none;}
+    .container, .contentbody, .projects{width:100%;}
+    .contenttext{width: 425px; margin-right: auto; margin-left: auto;}
+    .projectcard{
+	width:calc(100% - 88px); max-width:calc(100% - 88px); height: 412px;}
+	.projectpagebody{width:calc(100% - 88px);
+	 margin-left:auto; margin-right: auto;}
+	.coverimage{width:100%; margin: 0px auto 54px; /*background-size: contain*/;}
+    .projectimage{ width:100%; padding-top: 125%; margin: 0px auto 54px; }
+    .projectimagelong{ width:100%; margin-left:0px;  background-size: cover;}}
+
+
+
+
