@@ -87,6 +87,7 @@ body{
 }
 
 .navcontent1{
+	margin-left: 64px;
 	color: #2c2c2c;;
 }
 
@@ -351,6 +352,7 @@ blockquote{
     .navbar{width:calc(100% - 64px);}
     .navtext{padding-left: 32px;}
     .navcontent{display:none;}
+    .navcontent1{margin-left: 0px;}
     .container, .contentbody, .projects{width:100%;}
     .contenttext{width:calc(100% - 64px); margin-right: auto; margin-left: auto;}
     .aboutcontenttext{margin-top: 32px;}
