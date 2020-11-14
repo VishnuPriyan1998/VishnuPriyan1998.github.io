@@ -86,6 +86,9 @@ body{
 	transition: all 0.2s ease;
 }
 
+.navcontent1{
+	color: #2c2c2c;;
+}
 
 .navcontent{
 	margin-left: 64px;
@@ -347,7 +350,7 @@ blockquote{
 {.projectcard,.projectcardfun{margin-left:auto; margin-right: auto;}
     .navbar{width:calc(100% - 64px);}
     .navtext{padding-left: 32px;}
-    .contentright{display:none;}
+    .navcontent{display:none;}
     .container, .contentbody, .projects{width:100%;}
     .contenttext{width:calc(100% - 64px); margin-right: auto; margin-left: auto;}
     .aboutcontenttext{margin-top: 32px;}
