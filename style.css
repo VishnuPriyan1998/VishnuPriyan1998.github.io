@@ -173,7 +173,7 @@ body{
 
 .cardtext{
 	margin: 30px 43px 0px;
-	flex-grow: 1;
+	height: 60px;
 }
 
 .cardtextfun{
@@ -312,9 +312,27 @@ blockquote{
   	background-repeat: no-repeat;
 }
 
+
+.projectimage1{
+	width: calc(100% - 234px);
+	padding-top: 50%;
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+
 .projectimagelong{
 	width: 100%;
 	padding-top: 34%;
+	background-size: cover;
+	background-position: center;
+  	background-repeat: no-repeat;
+}
+
+.projectgif{
+	width: calc(100% - 120px);
+	margin-left: 60px;
+	padding-top: 47%;
 	background-size: cover;
 	background-position: center;
   	background-repeat: no-repeat;
@@ -328,25 +346,28 @@ blockquote{
  @media all and (max-width: 575px)
 {.projectcard,.projectcardfun{margin-left:auto; margin-right: auto;}
     .navbar{width:calc(100% - 64px);}
-    .navtext{padding-left: 44px;}
+    .navtext{padding-left: 32px;}
     .contentright{display:none;}
     .container, .contentbody, .projects{width:100%;}
-    .contenttext{width:calc(100% - 88px); margin-right: auto; margin-left: auto;}
+    .contenttext{width:calc(100% - 64px); margin-right: auto; margin-left: auto;}
     .aboutcontenttext{margin-top: 32px;}
     .cardbottomtextandtags{flex-flow: row wrap;}
     .projectcard{
-	width:calc(100% - 88px); max-width:calc(100% - 88px); height: 100%;}
+	width:calc(100% - 32px);}
 	.projectcardfun{
-	width:calc(100% - 88px); max-width:calc(100% - 88px); height: 100%;}
+	width:calc(100% - 32px);}
 	.projectcardfun{
 	padding-bottom: 20px;}
-	.projectpagebody{width:calc(100% - 88px);
+	.projectpagebody{width:calc(100% - 64px);
 	 margin-left:auto; margin-right: auto;}
-	.coverimage{width:100%; margin: 0px auto 54px; /*background-size: contain*/;}
+	.coverimage{width:calc(100% + 64px); margin: 0px -32px 54px; /*background-size: contain*/;}
     .projectimage{ width:100%; padding-top: 125%; margin: 0px auto 54px; }
-    .projectimagelong{ width:100%; margin-left:0px;  background-size: cover;}}
+    .projectimage1{ width:100%; padding-top: 74%; margin: 0px auto 54px; }
+    .projectimagelong{ width:100%; margin-left:0px;  background-size: cover;}
+    .projectgif{ width:100%; padding-top: 74%; margin: 0px auto; }
+}
 
-@media all and (max-width: 375px)
+@media all and (max-width: 400px)
 {.cardtext{margin: 24px;}
 .cardbottomtextandtags{ 
 	display: flex;
